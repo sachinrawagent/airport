@@ -31,7 +31,7 @@ export default function CreateFlight() {
       capacity: event.target.capacity.value,
     };
     axios
-      .post("http://localhost:8080/createflight", payload)
+      .post("https://airportauthority.herokuapp.com/createflight", payload)
       .then((res) => {
         console.log(res);
 
